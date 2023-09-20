@@ -19,7 +19,12 @@ container-lint:
 
 refactor: format lint
 
+#replace xxx with the .py (without the .py) file that you want to run
 deploy:
-	#deploy goes here
+	python -m main
+
+#if u want a different run file that's different from deploy
+run:
+	python -m main
 		
 all: install lint test format deploy
