@@ -21,10 +21,10 @@ refactor: format lint
 
 #replace xxx with the .py (without the .py) file that you want to run
 deploy:
-	python -m main
+	python -m main 2 3
 
 #if u want a different run file that's different from deploy
 run:
-	python -m main
+	python -m main 2 3
 		
 all: install lint test format deploy
